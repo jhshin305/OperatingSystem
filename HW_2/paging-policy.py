@@ -1,4 +1,5 @@
 #! /usr/bin/env python
+# python ./HW_2./paging-policy.py --addresses=0,1,2,0,1,3,0,3,1,2,1 --policy=LIFO --cachesize=3 -c
 
 from __future__ import print_function
 import sys
@@ -128,6 +129,9 @@ else:
     elif policy == 'OPT' or policy == 'RAND' or policy == 'UNOPT' or policy == 'CLOCK':
         leftStr = 'Left '
         riteStr = 'Right'
+    elif policy == 'LIFO':
+        leftStr = 'FirstIn'
+        riteStr = 'Lastin '
     else:
         print('Policy %s is not yet implemented' % policy)
         exit(1)
@@ -160,7 +164,7 @@ else:
                 # must replace
                 if policy == 'FIFO' or policy == 'LRU':
                     victim = memory.pop(0)
-                elif policy == 'MRU':
+                elif policy == 'MRU' or policy == 'LIFO':
                     victim = memory.pop(count-1)
                 elif policy == 'RAND':
                     victim = memory.pop(int(random.random() * count))
