@@ -1,4 +1,5 @@
 #! /usr/bin/env python
+# python ./OperatingSystem./HW_2./x86.py -p ticket.s -t 1 -M ./OperatingSystem./HW_2./ticket,turn,count -R ax,bx -c
 
 from __future__ import print_function
 import sys
