@@ -1,5 +1,8 @@
 #! /usr/bin/env python
-# python ./HW_2./paging-policy.py --addresses=0,1,2,0,1,3,0,3,1,2,1 --policy=LIFO --cachesize=3 -c
+# python ./OperatingSystem./HW_2./paging-policy.py --addresses=0,1,1,0,0,1,2,0,0,1,1,1,3,0,5,6,1,0,9,1 --policy=FIFO --cachesize=3 -c
+# python ./OperatingSystem./HW_2./paging-policy.py --addresses=0,1,1,0,0,1,2,0,0,1,1,1,3,0,5,6,1,0,9,1 --policy=LRU --cachesize=3 -c
+# python ./OperatingSystem./HW_2./paging-policy.py --addresses=0,1,1,0,0,1,2,0,0,1,1,1,3,0,5,6,1,0,9,1 --policy=LIFO --cachesize=3 -c
+# python ./OperatingSystem./HW_2./paging-policy.py --addresses=0,1,1,0,0,1,2,0,0,1,1,1,3,0,5,6,1,0,9,1 --policy=OPT --cachesize=3 -c
 
 from __future__ import print_function
 import sys
