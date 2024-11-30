@@ -29,10 +29,12 @@ void release() {
 }
 
 int main() {
-	while(true) {
+	int bx; //ticket.s에서 %bx를 초기화하지 않았다.
+	while(bx) {
 		acquire();
 		critical_section();
 		release();
+		bx--;
 	}
 
 	return 0;
