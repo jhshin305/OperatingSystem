@@ -1,9 +1,5 @@
 #! /usr/bin/env python
-# python ./OperatingSystem./HW_2./paging-policy.py --addresses=0,1,1,0,0,1,2,0,0,1,1,1,3,0,5,6,1,0,9,1 --policy=FIFO --cachesize=3 -c
-# python ./OperatingSystem./HW_2./paging-policy.py --addresses=0,1,1,0,0,1,2,0,0,1,1,1,3,0,5,6,1,0,9,1 --policy=LRU --cachesize=3 -c
-# python ./OperatingSystem./HW_2./paging-policy.py --addresses=0,1,1,0,0,1,2,0,0,1,1,1,3,0,5,6,1,0,9,1 --policy=LIFO --cachesize=3 -c
-# python ./OperatingSystem./HW_2./paging-policy.py --addresses=0,1,1,0,0,1,2,0,0,1,1,1,3,0,5,6,1,0,9,1 --policy=OPT --cachesize=3 -c
-
+# python ./paging-policy.py --addresses=2,3,1,1,0,1,0,1,0,1,1,0,0,1,2,0,3,0,1,0 --cachesize=3 -c --policy=
 from __future__ import print_function
 import sys
 from optparse import OptionParser
