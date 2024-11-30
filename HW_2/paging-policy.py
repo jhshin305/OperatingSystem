@@ -1,5 +1,4 @@
 #! /usr/bin/env python
-# python ./paging-policy.py --addresses=2,3,1,1,0,1,0,1,0,1,1,0,0,1,2,0,3,0,1,0 --cachesize=3 -c --policy=
 from __future__ import print_function
 import sys
 from optparse import OptionParser
