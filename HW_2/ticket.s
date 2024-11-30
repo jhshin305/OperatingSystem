@@ -19,8 +19,8 @@ add  $1, %ax          # increment it
 mov  %ax, count       # store it back
 
 # release lock
-mov $1, %ax
-; mov $2, %ax
+# mov $1, %ax
+mov $2, %ax
 fetchadd %ax, turn
 
 # see if we're still looping

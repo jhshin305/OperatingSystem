@@ -7,7 +7,7 @@ int count = 0;
 
 void fetch_and_add(int* a, int* b) {
 	int tmp = *b;
-	*b = *a + *b;
+	*b = *a + tmp;
 	*a = tmp;
 }
 

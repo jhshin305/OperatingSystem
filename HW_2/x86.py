@@ -1,5 +1,8 @@
 #! /usr/bin/env python
-# python ./OperatingSystem./HW_2./x86.py -p ticket.s -t 1 -M ./OperatingSystem./HW_2./ticket,turn,count -R ax,bx -c
+# python ./OperatingSystem./HW_2./x86.py -p ./OperatingSystem./HW_2./ticket.s -t 1 -M ticket,turn,count -R ax,bx -c
+# python ./OperatingSystem./HW_2./x86.py -p ./OperatingSystem./HW_2./ticket.s -t 2 -M ticket,turn,count -R ax,bx -a bx=1,bx=1 -c
+# python x86.py -p ticket.s -t 2 -M ticket,turn,count -R ax,bx -a bx=1,bx=1 -c
+# python x86.py -p ticket.s -t 2 -M ticket,turn,count -R ax,bx -c -i 10
 
 from __future__ import print_function
 import sys
